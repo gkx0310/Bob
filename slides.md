@@ -1,21 +1,24 @@
+
+# Academic Performance Overview
+
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-### Academic Correlation
+### Math vs. Verbal Comparison
 
-This visualization explores the relationship between Math and Verbal scores across the student cohort.
+This scatter diagram compares standardized test scores between Math and Verbal disciplines, categorized by sex.
 
-- Positive correlation analysis
-- Grouped by sex
-- Colors: Okabe-Ito Palette
+- **Color Coding:** Blue (Male), Orange (Female)
+- **Trend:** Observation of score correlation across the student cohort.
+- **Symbolism:** $\sigma$ represents quantitative aptitude, while $\epsilon$ denotes verbal proficiency.
 
-:::
+::: 
 
 ::: {.column width="50%"}
 
-<iframe src='media/plots/math_vs_verbal.html' width='100%' height='500px' style='border:none;'></iframe>
+<iframe data-src='media/plots/math_vs_verbal.html' width='100%' height='500px' style='border:none;'></iframe>
 
-:::
+::: 
 
 ::::
