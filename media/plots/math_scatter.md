@@ -1,0 +1,6 @@
+setwd('/content/project')
+library(ggplot2)
+library(plotly)
+p <- ggplot(bigclass, aes(x = name, y = Math, color = sex)) + geom_point(size = 4) + scale_color_manual(values = c('#0072B2', '#D55E00')) + labs(title = 'Math Scores by Student', x = 'Student Name', y = 'Math Score') + theme_minimal()
+p_plotly <- ggplotly(p)
+htmlwidgets::saveWidget(p_plotly, 'media/plots/math_scatter.html', selfcontained=TRUE)
