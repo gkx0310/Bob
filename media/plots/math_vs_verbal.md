@@ -1,0 +1,6 @@
+setwd('/content/project')
+library(ggplot2)
+library(plotly)
+p_scatter <- ggplot(bigclass, aes(x = Math, y = Verbal, color = sex)) + geom_point(size = 3, alpha = 0.7) + scale_color_manual(values = c('F' = '#0072B2', 'M' = '#D55E00')) + labs(title = 'Math vs Verbal Scores', x = 'Math Score', y = 'Verbal Score') + theme_minimal()
+p_plotly_scatter <- ggplotly(p_scatter)
+htmlwidgets::saveWidget(p_plotly_scatter, 'media/plots/math_vs_verbal.html', selfcontained=TRUE)
