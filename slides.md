@@ -22,3 +22,28 @@ This scatter diagram compares standardized test scores between Math and Verbal d
 ::: 
 
 ::::
+
+---
+
+# Physical Characteristics
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Height Distribution
+
+Analysis of student heights across the entire class.
+
+- **Primary Color:** Okabe-Ito Blue (#0072B2)
+- **Insights:** Visualizing the spread and central tendency of physical growth metrics.
+
+::: 
+
+::: {.column width="50%"}
+
+<iframe data-src='media/plots/height_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+
+::: 
+
+::::
