@@ -1,0 +1,6 @@
+setwd('/content/project')
+library(ggplot2)
+library(plotly)
+p <- ggplot(bigclass, aes(x = Math)) + geom_histogram(bins = 10, fill = '#0072B2', color = 'white') + labs(title = 'Distribution of Math Scores', x = 'Math Score', y = 'Frequency') + theme_minimal()
+p_plotly <- ggplotly(p)
+htmlwidgets::saveWidget(p_plotly, 'media/plots/math_histogram.html', selfcontained=TRUE)
