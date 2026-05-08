@@ -1,35 +1,25 @@
-# BigClass Data Analysis
+# Student Performance Analysis
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Weight Distribution
-This box plot shows the distribution of weight between male and female students.
-:::
+### Math Score Distribution
+This histogram shows the frequency of Math scores. 
+Spacing has been adjusted for better legibility.
+::: 
 ::: {.column width="50%"}
-<iframe src="media/plots/boxplot.html" width="100%" height="500px"></iframe>
-:::
+<iframe src="media/plots/hist_improved.html" width="100%" height="500px"></iframe>
+::: 
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Math Performance
-The histogram illustrates the spread of Math scores across the dataset.
-:::
+### Verbal vs Math Correlation
+Exploring the relationship between Math and Verbal scores. 
+Each point represents a student.
+::: 
 ::: {.column width="50%"}
-<iframe src="media/plots/histogram.html" width="100%" height="500px"></iframe>
-:::
-::::
-
----
-
-:::: {.columns}
-::: {.column width="50%"}
-### Height Trends
-This bar chart displays the average height relative to the age of the students.
-:::
-::: {.column width="50%"}
-<iframe src="media/plots/barchart.html" width="100%" height="500px"></iframe>
-:::
+<iframe src="media/plots/scatter.html" width="100%" height="500px"></iframe>
+::: 
 ::::
