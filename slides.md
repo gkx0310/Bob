@@ -1,49 +1,35 @@
-
-# Academic Performance Overview
+# BigClass Data Analysis
 
 :::: {.columns}
-
 ::: {.column width="50%"}
-
-### Math vs. Verbal Comparison
-
-This scatter diagram compares standardized test scores between Math and Verbal disciplines, categorized by sex.
-
-- **Color Coding:** Blue (Male), Orange (Female)
-- **Trend:** Observation of score correlation across the student cohort.
-- **Symbolism:** $\sigma$ represents quantitative aptitude, while $\epsilon$ denotes verbal proficiency.
-
-::: 
-
+### Weight Distribution
+This box plot shows the distribution of weight between male and female students.
+:::
 ::: {.column width="50%"}
-
-<iframe data-src='media/plots/math_vs_verbal.html' width='100%' height='500px' style='border:none;'></iframe>
-
-::: 
-
+<iframe src="media/plots/boxplot.html" width="100%" height="500px"></iframe>
+:::
 ::::
 
 ---
 
-# Physical Characteristics
+:::: {.columns}
+::: {.column width="50%"}
+### Math Performance
+The histogram illustrates the spread of Math scores across the dataset.
+:::
+::: {.column width="50%"}
+<iframe src="media/plots/histogram.html" width="100%" height="500px"></iframe>
+:::
+::::
+
+---
 
 :::: {.columns}
-
 ::: {.column width="50%"}
-
-### Height Distribution
-
-Analysis of student heights across the entire class.
-
-- **Primary Color:** Okabe-Ito Blue (#0072B2)
-- **Insights:** Visualizing the spread and central tendency of physical growth metrics.
-
-::: 
-
+### Height Trends
+This bar chart displays the average height relative to the age of the students.
+:::
 ::: {.column width="50%"}
-
-<iframe data-src='media/plots/height_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
-
-::: 
-
+<iframe src="media/plots/barchart.html" width="100%" height="500px"></iframe>
+:::
 ::::
