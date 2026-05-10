@@ -1,73 +1,71 @@
 
-# Academic Distribution
+# Student Age Analysis
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Math Scores
+### Age Distribution
 
-The math scores show a wide distribution across the class sample.
+This histogram shows the age spread within the class.
 
-- Data includes $N=19$ students.
-- Binning set for clear readability.
-- $\sigma$ values reflect high variance.
-
-[@missing_citation]
+- Categorized by individual years.
+- Peak frequency observed at age 13.
+- Colors follow the Okabe-Ito palette.
 :::
 ::: {.column width="50%"}
-<iframe src="media/plots/hist.html" width="100%" height="500px"></iframe>
+<iframe src="media/plots/age_hist.html" width="100%" height="500px"></iframe>
 :::
 ::::
 
 ---
 
-# Physical Correlation
+# Academic Performance
+
+:::: {.columns}
+::: {.column width="50%"}
+### Math Proficiency
+
+Comparison of average math scores between male and female students.
+
+- Values calculated as the arithmetic mean.
+- Significant variance observed between groups.
+:::
+::: {.column width="50%"}
+<iframe src="media/plots/math_bar.html" width="100%" height="500px"></iframe>
+:::
+::::
+
+---
+
+# Physical Metrics
+
+:::: {.columns}
+::: {.column width="50%"}
+### Weight Variance
+
+Boxplots illustrating the distribution of student weights.
+
+- Displays median and quartiles.
+- Useful for identifying outliers in physical growth.
+:::
+::: {.column width="50%"}
+<iframe src="media/plots/weight_box.html" width="100%" height="500px"></iframe>
+:::
+::::
+
+---
+
+# Growth Correlation
 
 :::: {.columns}
 ::: {.column width="50%"}
 ### Height vs Weight
 
-There is a notable $\rho$ correlation between physical height and weight metrics.
+Analyzing the $\rho$ correlation between height and weight.
 
-- Blue: Males, Orange: Females.
-- Outliers exist in the upper weight range.
+- Colored by gender to identify sexual dimorphism.
+- Clear upward trend indicates positive correlation.
 :::
 ::: {.column width="50%"}
-<iframe src="media/plots/scatter.html" width="100%" height="500px"></iframe>
-:::
-::::
-
----
-
-# Skill Comparison
-
-:::: {.columns}
-::: {.column width="50%"}
-### Verbal Aptitude
-
-Box plots illustrate the median and interquartile range for verbal scores.
-
-- Individual data points overlaid for transparency.
-- Gender-based $\epsilon$ differences are minimal.
-:::
-::: {.column width="50%"}
-<iframe src="media/plots/box.html" width="100%" height="500px"></iframe>
-:::
-::::
-
----
-
-# Class Demographics
-
-:::: {.columns}
-::: {.column width="50%"}
-### Student Age Range
-
-This bar chart categorizes our population by age group.
-
-- Majority of students are 13-14 years old.
-- Color selected from Okabe-Ito palette.
-:::
-::: {.column width="50%"}
-<iframe src="media/plots/bar.html" width="100%" height="500px"></iframe>
+<iframe src="media/plots/height_weight_scatter.html" width="100%" height="500px"></iframe>
 :::
 ::::
