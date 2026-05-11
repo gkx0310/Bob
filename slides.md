@@ -69,3 +69,41 @@ Analyzing the $\rho$ correlation between height and weight.
 <iframe src="media/plots/height_weight_scatter.html" width="100%" height="500px"></iframe>
 :::
 ::::
+
+---
+
+# Production Data Analysis
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine Temperature Over Time
+
+This plot shows the variation in machine temperature against the timestamp.
+
+- The timestamp data was converted to a proper datetime format.
+- Identifies potential fluctuations or trends in temperature over the recording period.
+- Highlighted using the Okabe-Ito blue color (`#0072B2`).
+:::
+::: {.column width="50%"}
+<iframe data-src='media/plots/temperature_timeseries.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+# Temporal Analysis
+
+:::: {.columns}
+::: {.column width="50%"}
+### Metrics vs. Time
+
+Analysis of Temperature and Pressure stability over the recorded duration.
+
+- **Temperature** (Solid Blue) shows steady state performance.
+- **Pressure** (Dashed Orange) indicates system consistency.
+- No significant anomalies detected in this window.
+:::
+::: {.column width="50%"}
+<iframe data-src='media/plots/metrics_time.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
