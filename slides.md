@@ -88,22 +88,3 @@ This plot shows the variation in machine temperature against the timestamp.
 <iframe data-src='media/plots/temperature_timeseries.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
-
----
-
-# Temporal Analysis
-
-:::: {.columns}
-::: {.column width="50%"}
-### Metrics vs. Time
-
-Analysis of Temperature and Pressure stability over the recorded duration.
-
-- **Temperature** (Solid Blue) shows steady state performance.
-- **Pressure** (Dashed Orange) indicates system consistency.
-- No significant anomalies detected in this window.
-:::
-::: {.column width="50%"}
-<iframe data-src='media/plots/metrics_time.html' width='100%' height='500px' style='border:none;'></iframe>
-:::
-::::
