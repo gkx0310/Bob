@@ -88,3 +88,22 @@ This plot shows the variation in machine temperature against the timestamp.
 <iframe data-src='media/plots/temperature_timeseries.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+# Statistical Process Control
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Control Chart
+
+Analysis of individual part lengths using an $xbar.one$ chart.
+
+- **Target Conditions**: Temp 303, Pressure 100.
+- **LCL/UCL**: Lower and Upper Control Limits calculated via $\pm 3\sigma$.
+- Monitoring helps detect shift in mean or increased variance.
+:::
+::: {.column width="50%"}
+<iframe data-src='media/plots/control_chart_m1.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
