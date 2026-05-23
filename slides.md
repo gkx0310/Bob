@@ -1,109 +1,56 @@
 
-# Student Age Analysis
+# Machine 1: Quality Control
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Age Distribution
+### Control & Capability
 
-This histogram shows the age spread within the class.
+Analysis for Machine 1 at 200kPa / 338K.
 
-- Categorized by individual years.
-- Peak frequency observed at age 13.
-- Colors follow the Okabe-Ito palette.
+- Monitoring individual values ($X$).
+- $\sigma$ calculated using moving range ($mR$).
+- Capability indices $C_p$ and $C_{pk}$ shown on the right.
 :::
 ::: {.column width="50%"}
-<iframe src="media/plots/age_hist.html" width="100%" height="500px"></iframe>
+![](media/pics/machine_1_qcc.png)
+![](media/pics/machine_1_cap.png)
 :::
 ::::
 
 ---
 
-# Academic Performance
+# Machine 2: Quality Control
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Math Proficiency
+### Control & Capability
 
-Comparison of average math scores between male and female students.
+Analysis for Machine 2 at 200kPa / 338K.
 
-- Values calculated as the arithmetic mean.
-- Significant variance observed between groups.
+- I-Chart used for individual measurements.
+- Distribution check for normality and capability.
 :::
 ::: {.column width="50%"}
-<iframe src="media/plots/math_bar.html" width="100%" height="500px"></iframe>
+![](media/pics/machine_2_qcc.png)
+![](media/pics/machine_2_cap.png)
 :::
 ::::
 
 ---
 
-# Physical Metrics
+# Machine 3: Quality Control
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Weight Variance
+### Control & Capability
 
-Boxplots illustrating the distribution of student weights.
+Analysis for Machine 3 at 200kPa / 338K.
 
-- Displays median and quartiles.
-- Useful for identifying outliers in physical growth.
+- Variance analysis using $\sigma$ estimator.
+- Process centered at target relative to specs.
 :::
 ::: {.column width="50%"}
-<iframe src="media/plots/weight_box.html" width="100%" height="500px"></iframe>
-:::
-::::
-
----
-
-# Growth Correlation
-
-:::: {.columns}
-::: {.column width="50%"}
-### Height vs Weight
-
-Analyzing the $\rho$ correlation between height and weight.
-
-- Colored by gender to identify sexual dimorphism.
-- Clear upward trend indicates positive correlation.
-:::
-::: {.column width="50%"}
-<iframe src="media/plots/height_weight_scatter.html" width="100%" height="500px"></iframe>
-:::
-::::
-
----
-
-# Production Data Analysis
-
-:::: {.columns}
-::: {.column width="50%"}
-### Machine Temperature Over Time
-
-This plot shows the variation in machine temperature against the timestamp.
-
-- The timestamp data was converted to a proper datetime format.
-- Identifies potential fluctuations or trends in temperature over the recording period.
-- Highlighted using the Okabe-Ito blue color (`#0072B2`).
-:::
-::: {.column width="50%"}
-<iframe data-src='media/plots/temperature_timeseries.html' width='100%' height='500px' style='border:none;'></iframe>
-:::
-::::
-
----
-
-# Statistical Process Control
-
-:::: {.columns}
-::: {.column width="50%"}
-### Machine 1 Control Chart
-
-Analysis of individual part lengths using an $xbar.one$ chart.
-
-- **Target Conditions**: Temp 303, Pressure 100.
-- **LCL/UCL**: Lower and Upper Control Limits calculated via $\pm 3\sigma$.
-- Monitoring helps detect shift in mean or increased variance.
-:::
-::: {.column width="50%"}
-<iframe data-src='media/plots/control_chart_m1.html' width='100%' height='500px' style='border:none;'></iframe>
+![](media/pics/machine_3_qcc.png)
+![](media/pics/machine_3_cap.png)
 :::
 ::::

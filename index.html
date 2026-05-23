@@ -539,110 +539,56 @@
     <div class="slides">
 
 
-<section id="student-age-analysis" class="slide level1">
-<h1>Student Age Analysis</h1>
+<section id="machine-1-quality-control" class="slide level1">
+<h1>Machine 1: Quality Control</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="age-distribution">Age Distribution</h3>
-<p>This histogram shows the age spread within the class.</p>
+<h3 id="control-capability">Control &amp; Capability</h3>
+<p>Analysis for Machine 1 at 200kPa / 338K.</p>
 <ul>
-<li>Categorized by individual years.</li>
-<li>Peak frequency observed at age 13.</li>
-<li>Colors follow the Okabe-Ito palette.</li>
+<li>Monitoring individual values (<span
+class="math inline">\(X\)</span>).</li>
+<li><span class="math inline">\(\sigma\)</span> calculated using moving
+range (<span class="math inline">\(mR\)</span>).</li>
+<li>Capability indices <span class="math inline">\(C_p\)</span> and
+<span class="math inline">\(C_{pk}\)</span> shown on the right.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<iframe src="media/plots/age_hist.html" width="100%" height="500px">
-</iframe>
+<p><img data-src="media/pics/machine_1_qcc.png" /> <img
+data-src="media/pics/machine_1_cap.png" /></p>
 </div>
 </div>
 </section>
-<section id="academic-performance" class="slide level1">
-<h1>Academic Performance</h1>
+<section id="machine-2-quality-control" class="slide level1">
+<h1>Machine 2: Quality Control</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="math-proficiency">Math Proficiency</h3>
-<p>Comparison of average math scores between male and female
-students.</p>
+<h3 id="control-capability-1">Control &amp; Capability</h3>
+<p>Analysis for Machine 2 at 200kPa / 338K.</p>
 <ul>
-<li>Values calculated as the arithmetic mean.</li>
-<li>Significant variance observed between groups.</li>
+<li>I-Chart used for individual measurements.</li>
+<li>Distribution check for normality and capability.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<iframe src="media/plots/math_bar.html" width="100%" height="500px">
-</iframe>
+<p><img data-src="media/pics/machine_2_qcc.png" /> <img
+data-src="media/pics/machine_2_cap.png" /></p>
 </div>
 </div>
 </section>
-<section id="physical-metrics" class="slide level1">
-<h1>Physical Metrics</h1>
+<section id="machine-3-quality-control" class="slide level1">
+<h1>Machine 3: Quality Control</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="weight-variance">Weight Variance</h3>
-<p>Boxplots illustrating the distribution of student weights.</p>
+<h3 id="control-capability-2">Control &amp; Capability</h3>
+<p>Analysis for Machine 3 at 200kPa / 338K.</p>
 <ul>
-<li>Displays median and quartiles.</li>
-<li>Useful for identifying outliers in physical growth.</li>
+<li>Variance analysis using <span class="math inline">\(\sigma\)</span>
+estimator.</li>
+<li>Process centered at target relative to specs.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<iframe src="media/plots/weight_box.html" width="100%" height="500px">
-</iframe>
-</div>
-</div>
-</section>
-<section id="growth-correlation" class="slide level1">
-<h1>Growth Correlation</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="height-vs-weight">Height vs Weight</h3>
-<p>Analyzing the <span class="math inline">\(\rho\)</span> correlation
-between height and weight.</p>
-<ul>
-<li>Colored by gender to identify sexual dimorphism.</li>
-<li>Clear upward trend indicates positive correlation.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe src="media/plots/height_weight_scatter.html" width="100%" height="500px">
-</iframe>
-</div>
-</div>
-</section>
-<section id="production-data-analysis" class="slide level1">
-<h1>Production Data Analysis</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="machine-temperature-over-time">Machine Temperature Over
-Time</h3>
-<p>This plot shows the variation in machine temperature against the
-timestamp.</p>
-<ul>
-<li>The timestamp data was converted to a proper datetime format.</li>
-<li>Identifies potential fluctuations or trends in temperature over the
-recording period.</li>
-<li>Highlighted using the Okabe-Ito blue color
-(<code>#0072B2</code>).</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/temperature_timeseries.html" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
-</section>
-<section id="statistical-process-control" class="slide level1">
-<h1>Statistical Process Control</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="machine-1-control-chart">Machine 1 Control Chart</h3>
-<p>Analysis of individual part lengths using an <span
-class="math inline">\(xbar.one\)</span> chart.</p>
-<ul>
-<li><strong>Target Conditions</strong>: Temp 303, Pressure 100.</li>
-<li><strong>LCL/UCL</strong>: Lower and Upper Control Limits calculated
-via <span class="math inline">\(\pm 3\sigma\)</span>.</li>
-<li>Monitoring helps detect shift in mean or increased variance.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/control_chart_m1.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/machine_3_qcc.png" /> <img
+data-src="media/pics/machine_3_cap.png" /></p>
 </div>
 </div>
 </section>
