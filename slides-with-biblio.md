@@ -19,6 +19,27 @@ Analysis for Machine 1 at 200kPa / 338K.
 
 ---
 
+# Machine 1: Resistance Analysis
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA Significance
+
+Statistical assessment of Machine 1 Resistance:
+
+- **Pressure (P):** $p < 0.0001$ (Significant)
+- **Temperature (T):** $p < 0.0001$ (Significant)
+- **Interaction (P*T):** $p = 0.8690$ (Not Significant)
+
+Both main factors independently affect the resistance output.
+:::
+::: {.column width="50%"}
+<iframe src="media/plots/m1_resistance_boxplot.html" width="100%" height="500px"></iframe>
+:::
+::::
+
+---
+
 # Machine 2: Quality Control
 
 :::: {.columns}
