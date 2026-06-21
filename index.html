@@ -558,107 +558,158 @@
     <div class="slides">
 
 
-<section id="machine-1-quality-control" class="slide level1">
-<h1>Machine 1: Quality Control</h1>
+<section id="executive-summary-objective" class="slide level1">
+<h1>Executive Summary &amp; Objective</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-capability">Control &amp; Capability</h3>
-<p>Analysis for Machine 1 at 200kPa / 338K.</p>
+<h3 id="optimizing-operational-stability">Optimizing Operational
+Stability</h3>
+<p>Our core objective is to validate machine consistency and define the
+optimal process window for resistance control.</p>
 <ul>
-<li>Monitoring individual values (<span
-class="math inline">\(X\)</span>).</li>
-<li><span class="math inline">\(\sigma\)</span> calculated using moving
-range (<span class="math inline">\(mR\)</span>).</li>
-<li>Capability indices <span class="math inline">\(C_p\)</span> and
-<span class="math inline">\(C_{pk}\)</span> shown on the right.</li>
+<li><strong>Quality Metric:</strong> Part Resistance (Target &lt; 10
+USL).</li>
+<li><strong>Assessment:</strong> Statistical validation of Machine 1 vs
+Machine 2.</li>
+<li><strong>Optimization:</strong> Identifying significance of
+environmental factors (<span class="math inline">\(P, T\)</span>).</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="media/pics/machine_1_qcc.png" /> <img
-data-src="media/pics/machine_1_cap.png" /></p>
+<p><img data-src="media/pics/machine_1_qcc.png" /></p>
 </div>
 </div>
+<p><strong>Speaker Notes:</strong> Good morning, team. Today’s review
+focuses on our capability to meet the Upper Specification Limit of 10
+for Part Resistance. We are moving beyond anecdotal observations to a
+purely data-driven model. Our goal is to determine if our current
+two-machine setup is truly standardized and to unlock the specific
+process parameters that will keep us in the high-quality zone
+consistently.</p>
 </section>
-<section id="machine-1-resistance-analysis" class="slide level1">
-<h1>Machine 1: Resistance Analysis</h1>
+<section id="machine-performance-divergence" class="slide level1">
+<h1>Machine Performance Divergence</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="anova-significance">ANOVA Significance</h3>
-<p>Statistical assessment of Machine 1 Resistance:</p>
+<h3 id="statistical-non-equivalence">Statistical Non-Equivalence</h3>
+<p>Welch’s Two-Sample t-test confirms significant performance gaps.</p>
 <ul>
-<li><strong>Pressure (P):</strong> <span class="math inline">\(p &lt;
-0.0001\)</span> (Significant)</li>
-<li><strong>Temperature (T):</strong> <span class="math inline">\(p &lt;
-0.0001\)</span> (Significant)</li>
-<li>**Interaction (P*T):** <span class="math inline">\(p =
-0.8690\)</span> (Not Significant)</li>
+<li><strong>Low Stress (<span class="math inline">\(P=100,
+T=303\)</span>):</strong>
+<ul>
+<li>Resistance <span class="math inline">\(p = 4.85 \times
+10^{-76}\)</span></li>
+</ul></li>
+<li><strong>High Stress (<span class="math inline">\(P=300,
+T=373\)</span>):</strong>
+<ul>
+<li>Resistance <span class="math inline">\(p = 2.04 \times
+10^{-99}\)</span></li>
+</ul></li>
 </ul>
-<p>Both main factors independently affect the resistance output.</p>
+<p><strong>Conclusion:</strong> Machine 1 and 2 are statistically
+distinct assets.</p>
 </div><div class="column" style="width:50%;">
-<iframe src="media/plots/m1_resistance_boxplot.html" width="100%" height="500px">
+<p><img data-src="media/pics/machine_2_qcc.png" /></p>
+</div>
+</div>
+<p><strong>Speaker Notes:</strong> The first major finding is critical:
+we cannot treat Machine 1 and Machine 2 as identical units. At both low
+and high stress envelopes, our p-values for resistance are effectively
+zero. This indicates a massive statistical divergence. Treating them as
+a single population in our QC charts is masking individual machine
+drift. We need independent calibration protocols for each asset
+immediately.</p>
+</section>
+<section id="key-drivers-of-resistance" class="slide level1">
+<h1>Key Drivers of Resistance</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="anova-analysis-machine-1">ANOVA Analysis (Machine 1)</h3>
+<p>Identifying variables that influence quality output.</p>
+<ul>
+<li><strong>Pressure (<span class="math inline">\(P\)</span>):</strong>
+<span class="math inline">\(\text{Pr}(&gt;F) = 0.0000\)</span>
+(Significant)</li>
+<li><strong>Temperature (<span
+class="math inline">\(T\)</span>):</strong> <span
+class="math inline">\(\text{Pr}(&gt;F) = 0.0000\)</span>
+(Significant)</li>
+<li><strong>Interaction (<span class="math inline">\(P \times
+T\)</span>):</strong> <span class="math inline">\(p = 0.8692\)</span>
+(Not Significant)</li>
+</ul>
+<p>Factors act independently to drive resistance lower.</p>
+</div><div class="column" style="width:50%;">
+<iframe src="media/plots/m1_resistance_boxplot.html" width="100%" height="450px">
 </iframe>
 </div>
 </div>
+<p><strong>Speaker Notes:</strong> To optimize Machine 1, we ran a
+two-way ANOVA. Both Pressure and Temperature are primary drivers with
+absolute statistical significance. However, note the interaction
+effect—at 0.8692, it is non-significant. This simplifies our engineering
+response: we can adjust pressure to manage resistance without worrying
+about a non-linear compounding effect with temperature. Each lever works
+independently to drive us toward our target.</p>
 </section>
-<section id="machine-2-quality-control" class="slide level1">
-<h1>Machine 2: Quality Control</h1>
+<section id="process-window-optimization" class="slide level1">
+<h1>Process Window Optimization</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-capability-1">Control &amp; Capability</h3>
-<p>Analysis for Machine 2 at 200kPa / 338K.</p>
+<h3 id="leveraging-environmental-controls">Leveraging Environmental
+Controls</h3>
+<p>Maximizing the distance from <span class="math inline">\(\text{USL} =
+10\)</span>.</p>
 <ul>
-<li>I-Chart used for individual measurements.</li>
-<li>Distribution check for normality and capability.</li>
+<li>Resistance responds linearly to <span
+class="math inline">\(P\)</span> and <span
+class="math inline">\(T\)</span> increases.</li>
+<li>Higher <span class="math inline">\(P/T\)</span> settings minimize
+resistance.</li>
+<li><strong>Strategy:</strong> Aggressive reduction of mean resistance
+to buffer against variation.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="media/pics/machine_2_qcc.png" /> <img
-data-src="media/pics/machine_2_cap.png" /></p>
+<p><img data-src="media/pics/machine_1_cap.png" /></p>
 </div>
 </div>
+<p><strong>Speaker Notes:</strong> Our data shows that as we increase
+Pressure and Temperature, Resistance drops. Since our spec is ‘lower is
+better’ with a hard cap at 10, we have an opportunity to optimize our
+process window. By shifting our baseline settings higher, we create a
+massive safety buffer. Even with natural process variation, this shift
+ensures we never flirt with the USL, effectively eliminating
+resistance-based rejects.</p>
 </section>
-<section id="machine-3-quality-control" class="slide level1">
-<h1>Machine 3: Quality Control</h1>
+<section id="data-driven-recommendations" class="slide level1">
+<h1>Data-Driven Recommendations</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-capability-2">Control &amp; Capability</h3>
-<p>Analysis for Machine 3 at 200kPa / 338K.</p>
-<ul>
-<li>Variance analysis using <span class="math inline">\(\sigma\)</span>
-estimator.</li>
-<li>Process centered at target relative to specs.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="media/pics/machine_3_qcc.png" /> <img
-data-src="media/pics/machine_3_cap.png" /></p>
-</div>
-</div>
-</section>
-<section id="machine-comparison-t-test-analysis" class="slide level1">
-<h1>Machine Comparison: T-Test Analysis</h1>
-<div class="columns">
-<div class="column" style="width:100%;">
-<h3 id="statistical-comparison-machine-1-vs-2">Statistical Comparison
-(Machine 1 vs 2)</h3>
-<p>We evaluated the difference in <code>PartLength</code> means between
-Machine 1 and Machine 2 using Welch’s Two Sample t-test at two
-operational envelopes:</p>
+<h3 id="technical-action-plan">Technical Action Plan</h3>
 <ol type="1">
-<li><strong>Low Stress (P=100, T=303):</strong>
-<ul>
-<li>Comparison of mean PartLength yields a statistical evaluation of
-consistency.</li>
-<li>Observed p-value indicates the level of significance in performance
-deviation.</li>
-</ul></li>
-<li><strong>High Stress (P=300, T=373):</strong>
-<ul>
-<li>Evaluates if thermal/pressure shifts induce significant variance
-between units.</li>
-</ul></li>
+<li><strong>Asset-Specific Controls:</strong> Cease aggregate
+monitoring; implement separate SPC for M1/M2.</li>
+<li><strong>Calibration Realignment:</strong> Audit Machine 2 to resolve
+the <span class="math inline">\(10^{-99}\)</span> delta.</li>
+<li><strong>Optimal Set-Points:</strong> Standardize Machine 1 at the
+high <span class="math inline">\(P/T\)</span> envelope.</li>
 </ol>
-<p><em>Note: A p-value &lt; 0.05 typically suggests a significant
-difference in machine output center-points.</em></p>
+</div><div class="column" style="width:50%;">
+<h3 id="expected-impact">Expected Impact</h3>
+<ul>
+<li>0% USL Exceedance.</li>
+<li>Reduced Process Variation.</li>
+<li>Enhanced Maintenance Predictability.</li>
+</ul>
 </div>
 </div>
+<p><strong>Speaker Notes:</strong> My recommendation to the board is
+three-fold. First, we stop treating the plant as a single unit and split
+our control charts by machine. Second, we need a maintenance deep-dive
+on Machine 2—a p-value that low suggests a physical difference in
+hardware state. Finally, we move Machine 1 to a higher <span
+class="math inline">\(P/T\)</span> standard. This isn’t just a guess;
+it’s a statistically validated path to zero-defect manufacturing.</p>
 </section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
