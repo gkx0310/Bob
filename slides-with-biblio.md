@@ -75,3 +75,7 @@ We evaluated the difference in `PartLength` means between Machine 1 and Machine 
 *Note: A p-value < 0.05 typically suggests a significant difference in machine output center-points.*
 :::
 ::::
+
+---
+# Bibliography
+<div id="refs"></div>
