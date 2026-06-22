@@ -1,3 +1,15 @@
+# Machine 1 Quality Analysis
+
+:::: {.columns}
+::: {.column width="100%"}
+### Prepared by:
+
+**GOH KAI XUAN**  
+**MATRIC NO : 251043260**
+:::
+::::
+
+---
 
 ---
 
