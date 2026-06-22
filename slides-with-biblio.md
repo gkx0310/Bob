@@ -33,7 +33,6 @@ Statistical analysis of `PartResistance` for Machine 1:
 <iframe src="media/plots/machine1_anova.html" width="100%" height="500px"></iframe>
 ::: 
 ::::
-
 ---
 # Bibliography
 <div id="refs"></div>
